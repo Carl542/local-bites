@@ -222,7 +222,7 @@ export const FarmerHome: React.FC = () => {
                   👩‍🍳
                 </div>
                 <div>
-                  <h3 className="font-bold text-xs text-stone-900">Chef Maria Santos</h3>
+                  <h3 className="font-bold text-xs text-stone-900">Chef Makiboi</h3>
                   <p className="text-[10px] text-stone-500">Green Leaf Bistro • Online</p>
                 </div>
               </div>
@@ -245,7 +245,7 @@ export const FarmerHome: React.FC = () => {
 
               <div className="flex flex-col items-end max-w-[80%] ml-auto">
                 <div className="bg-[#0D8244] p-3 rounded-2xl rounded-tr-xs text-white shadow-2xs">
-                  Maayong buntag Chef Maria! Yes, just packed them freshly picked from Mt. Apo foothills.
+                  Maayong buntag Chef Makiboi! Yes, just packed them freshly picked from Mt. Apo foothills.
                 </div>
                 <span className="text-[9px] text-stone-400 mt-1 pr-1">9:31 AM</span>
               </div>
@@ -266,7 +266,7 @@ export const FarmerHome: React.FC = () => {
                 className="flex-1 bg-stone-100 border border-stone-200 rounded-xl px-3 py-2 text-xs outline-none focus:ring-2 focus:ring-[#0D8244]"
               />
               <button
-                onClick={() => alert('Message sent to Chef Maria!')}
+                onClick={() => alert('Message sent to Chef Makiboi!')}
                 className="bg-[#0D8244] text-white px-4 py-2 rounded-xl font-bold text-xs cursor-pointer shadow-xs"
               >
                 Send

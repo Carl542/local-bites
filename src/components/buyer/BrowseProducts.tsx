@@ -199,7 +199,7 @@ export const BrowseProducts: React.FC = () => {
             <button
               type="button"
               className="w-7 h-7 rounded-full bg-[#0B4A2A] flex items-center justify-center text-white shadow-2xs hover:opacity-90 transition-opacity cursor-pointer"
-              title="Chef Maria"
+              title="Chef Makiboi"
             >
               <User className="w-3.5 h-3.5 text-white" />
             </button>

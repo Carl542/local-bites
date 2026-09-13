@@ -94,7 +94,7 @@ export const DemoToolbar: React.FC = () => {
               }`}
             >
               <span>👩‍🍳</span>
-              <span>Buyer (Chef Maria)</span>
+              <span>Buyer (Chef Makiboi)</span>
             </button>
           </div>
 

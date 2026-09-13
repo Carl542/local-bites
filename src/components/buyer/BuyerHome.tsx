@@ -85,7 +85,7 @@ export const BuyerHome: React.FC = () => {
             <button
               type="button"
               className="w-7 h-7 rounded-full bg-[#0B4A2A] flex items-center justify-center text-white shadow-2xs hover:opacity-90 transition-opacity cursor-pointer"
-              title="Chef Maria"
+              title="Chef Makiboi"
             >
               <User className="w-3.5 h-3.5 text-white" />
             </button>
@@ -95,18 +95,18 @@ export const BuyerHome: React.FC = () => {
 
       {/* Main Scrollable Content */}
       <div className="flex-1 overflow-y-auto p-4 space-y-3.5">
-        {/* Chef Maria Greeting with Pill Badge */}
+        {/* Chef Makiboi Greeting with Pill Badge */}
         <div className="space-y-1.5">
           <div className="inline-flex items-center gap-1.5 bg-[#E6F4EA] px-2.5 py-0.5 rounded-full border border-emerald-200/80 shadow-2xs">
             <span className="w-1.5 h-1.5 rounded-full bg-[#16A34A]"></span>
             <span className="text-[10px] font-black text-[#166534]">
-              Chef Maria • Green Leaf Bistro
+              Chef Makiboi • Green Leaf Bistro
             </span>
           </div>
 
           <div>
             <h1 className="text-xl font-black text-[#0F172A] tracking-tight">
-              Good morning, Chef Maria!
+              Good morning, Chef Makiboi!
             </h1>
             <p className="text-xs text-stone-500 font-medium mt-0.5 leading-snug">
               Fresh and local harvest directly from partner farms in Digos City.

@@ -70,7 +70,7 @@ export const BuyerOrders: React.FC<BuyerOrdersProps> = ({ onSelectOrder }) => {
 
           <div
             className="w-8 h-8 rounded-full bg-[#0A4A29] flex items-center justify-center text-white shadow-xs cursor-pointer hover:opacity-90 transition-opacity"
-            title="Chef Maria (Green Leaf Bistro)"
+            title="Chef Makiboi (Green Leaf Bistro)"
           >
             <User className="w-4 h-4" />
           </div>

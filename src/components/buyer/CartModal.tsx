@@ -90,7 +90,7 @@ export const CartModal: React.FC = () => {
   // Fallback data for Order Confirmation state matching reference screenshot #ORD-1026
   const currentConfirmedOrder: Order = confirmedOrder || {
     id: '#ORD-1026',
-    buyerName: 'Chef Maria • Green Leaf Bistro',
+    buyerName: 'Chef Makiboi • Green Leaf Bistro',
     buyerAddress: 'Rizal St., Digos City',
     phone: '0917 123 4567',
     items: [
@@ -188,7 +188,7 @@ export const CartModal: React.FC = () => {
 
         const createdOrder = orders.find((o) => o.id === result.orderId) || {
           id: result.orderId,
-          buyerName: 'Green Leaf Bistro (Chef Maria)',
+          buyerName: 'Green Leaf Bistro (Chef Makiboi)',
           buyerAddress: 'Rizal St., Digos City',
           phone: '0917 123 4567',
           items: cart.map((c) => ({
@@ -282,7 +282,7 @@ export const CartModal: React.FC = () => {
 
         <div
           className="w-8 h-8 rounded-full bg-[#0A4A29] flex items-center justify-center text-white shadow-xs cursor-pointer hover:opacity-90 transition-opacity"
-          title="Chef Maria (Green Leaf Bistro)"
+          title="Chef Makiboi (Green Leaf Bistro)"
         >
           <User className="w-4 h-4" />
         </div>
@@ -716,7 +716,7 @@ export const CartModal: React.FC = () => {
                   ORDERING AS
                 </span>
                 <h4 className="text-xs font-black text-stone-900 leading-tight">
-                  Chef Maria • Green Leaf Bistro
+                  Chef Makiboi • Green Leaf Bistro
                 </h4>
               </div>
             </div>

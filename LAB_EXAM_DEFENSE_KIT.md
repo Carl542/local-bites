@@ -22,7 +22,7 @@
 ### 1.1 Live Interactive Demo Flow (Run this during the defense):
 1. **Open Local App:**
    - Run `npm run dev` and navigate to `http://localhost:5173`.
-   - In the Demo Toolbar, toggle **Single** or **Side-by-Side** (Dual view showing Farmer Carl Amil on left and Buyer Chef Maria on right).
+   - In the Demo Toolbar, toggle **Single** or **Side-by-Side** (Dual view showing Farmer Carl Amil on left and Buyer Chef Makiboi on right).
 2. **Step 1 – Produce Batch Detail:**
    - In Buyer View, open Roma Tomatoes. Show the batch details: *30 kg in field reserve*, *Picked 5:30 AM today*, *98% Peak Moisture*, and *Brix 5.8°*.
 3. **Step 2 – Add to Cart & Simulate Stock Competition:**
@@ -41,7 +41,7 @@
 6. **Step 5 – Order Confirmation & Real-Time Stock Deduction:**
    - Click **"Place Order (₱1,000.00)"**.
    - Confetti triggers! Screen displays **#ORD-1026 Confirmation**:
-     - *Chef Maria • Green Leaf Bistro*
+     - *Chef Makiboi • Green Leaf Bistro*
      - *Digos Co-op Courier Van 2 (Departs 2:00 PM)*
      - *Live Inventory Allocation notice*.
    - Check the Farmer view: Tomato inventory automatically drops from 30 kg to 0 kg remaining (Sold Out). Zero overselling achieved!
@@ -73,9 +73,9 @@ Create these 4 columns on your agency's Trello board:
 - **Owner:** ALISOSO, Allen Kenneth G. (Project Manager / Lead Architect)
 - **Points:** 3 pts
 - **Description:**
-  Define persona (Chef Maria, Green Leaf Bistro), acceptance criteria for US-1 (Farmer Inventory) and US-2 (Buyer Ordering & Stock Validation), and matrix mapping.
+  Define persona (Chef Makiboi, Green Leaf Bistro), acceptance criteria for US-1 (Farmer Inventory) and US-2 (Buyer Ordering & Stock Validation), and matrix mapping.
 - **Checklist:**
-  - [x] Defined Chef Maria buyer persona and Carl Amil farmer persona
+  - [x] Defined Chef Makiboi buyer persona and Carl Amil farmer persona
   - [x] Drafted Given/When/Then acceptance criteria for overselling prevention
   - [x] Allocated tickets across PM, Frontend, Backend, and DevOps
 
@@ -292,7 +292,7 @@ git merge develop -m "release: v1.0.0 milestone release for lab defense"
 In `src/index.css`, all Figma tokens are cleanly mapped to semantic CSS variables:
 - `--color-brand-primary`: `#0B4A2A` (Forest Green CTA)
 - `--color-brand-accent`: `#16A34A` (Live Stock Green)
-- `--color-buyer-blue`: `#1D4ED8` (Chef Maria Accent)
+- `--color-buyer-blue`: `#1D4ED8` (Chef Makiboi Accent)
 - `--color-status-warning`: `#B45309` (Inventory Alert)
 - `--color-status-danger`: `#DC2626` (Shortage & Out of Stock)
 - `--color-surface-page`: `#FAFBFB` (High-contrast clean background)
@@ -328,8 +328,8 @@ Implemented globally in `src/index.css`:
 > *"Hello, I am Carl Vincent Amil, the Frontend Specialist. I was responsible for component decomposition, Figma design token mapping, mobile responsiveness, and WCAG accessibility.  
 > In `src/index.css`, we eliminated arbitrary colors by establishing a strict design token system. We also enforced WCAG 2.1 AA standards with 4.5:1 text contrast and global `*:focus-visible` keyboard rings.  
 > Let me demonstrate our running feature live in `http://localhost:5173`:  
-> Here is Chef Maria from Green Leaf Bistro. She views Juan's Roma Tomatoes batch with morning harvest timestamps and a Brix sweetness score. She adds 15 kg to her cart.  
-> Notice our dual view: when we simulate a concurrent buyer taking 20 kg, Chef Maria's checkout triggers our validation state. Instead of failing blindly, our UI shows an intuitive 2-segment visualizer and auto-adjusts to the remaining 10 kg. When confirmed, Order #ORD-1026 routes directly to the dispatch timeline."*
+> Here is Chef Makiboi from Green Leaf Bistro. He views Juan's Roma Tomatoes batch with morning harvest timestamps and a Brix sweetness score. He adds 15 kg to his cart.  
+> Notice our dual view: when we simulate a concurrent buyer taking 20 kg, Chef Makiboi's checkout triggers our validation state. Instead of failing blindly, our UI shows an intuitive 2-segment visualizer and auto-adjusts to the remaining 10 kg. When confirmed, Order #ORD-1026 routes directly to the dispatch timeline."*
 
 #### **3. ALGONES, Mark Anthony L. (Backend / Database Engineer) – 2.5 Minutes:**
 > *"Good morning, I am Mark Anthony Algones, the Backend and Database Engineer. I architected our API contracts, database structure, and inventory transaction safety.  

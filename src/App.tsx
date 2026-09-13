@@ -72,7 +72,7 @@ const BuyerMoreView: React.FC = () => {
           👩‍🍳
         </div>
         <h3 className="font-bold text-base text-stone-900 dark:text-white">
-          Chef Maria Santos
+          Chef Makiboi
         </h3>
         <p className="text-stone-500 text-xs">Green Leaf Bistro • Digos City</p>
         <span className="inline-block mt-2 bg-blue-100 text-blue-800 text-[10px] font-bold px-2.5 py-0.5 rounded-full">
@@ -130,7 +130,7 @@ const BuyerAppView: React.FC = () => {
   return (
     <MobileFrame
       roleBadge={{
-        text: 'Buyer App (Chef Maria)',
+        text: 'Buyer App (Chef Makiboi)',
         color: 'bg-blue-100 text-blue-800 dark:bg-blue-950/60 dark:text-blue-300',
       }}
     >
@@ -175,7 +175,7 @@ const MainContent: React.FC = () => {
           <div className="flex flex-col items-center">
             <div className="mb-2 text-center">
               <span className="text-xs font-extrabold uppercase tracking-wider text-blue-400 bg-blue-950/80 px-3 py-1 rounded-full border border-blue-500/30">
-                👩‍🍳 Restaurant View • Chef Maria
+                👩‍🍳 Restaurant View • Chef Makiboi
               </span>
             </div>
             <BuyerAppView />

@@ -443,7 +443,7 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
       image: '/roma-tomatoes-basket.jpg',
     };
 
-    // 2. Put 15 kg of Tomatoes + 5 kg Lettuce into Chef Maria's cart
+    // 2. Put 15 kg of Tomatoes + 5 kg Lettuce into Chef Makiboi's cart
     setCart([
       {
         product: scenarioTomato,
@@ -542,7 +542,7 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
 
     const newOrder: Order = {
       id: newOrderId,
-      buyerName: buyerInfo.name || 'Green Leaf Bistro (Chef Maria)',
+      buyerName: buyerInfo.name || 'Green Leaf Bistro (Chef Makiboi)',
       buyerAddress: buyerInfo.address || 'Rizal St., Digos City',
       phone: buyerInfo.phone || '0917 123 4567',
       distance: '2.4 km',
