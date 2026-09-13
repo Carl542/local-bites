@@ -175,7 +175,7 @@ export const FarmerHome: React.FC = () => {
         </div>
         <div className="w-16 h-16 rounded-xl overflow-hidden shrink-0 border border-white shadow-xs">
           <img
-            src="https://images.unsplash.com/photo-1592417817098-8f3d6910985c?w=400&auto=format&fit=crop&q=80"
+            src="/sprout-seedling.jpg"
             alt="Sprout seedling in soil"
             className="w-full h-full object-cover"
           />
