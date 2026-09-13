@@ -22,19 +22,23 @@ export const MobileFrame: React.FC<MobileFrameProps> = ({
       </div>
 
       {/* iOS Status Bar */}
-      <div className="h-10 pt-2 px-6 flex justify-between items-center text-xs font-semibold text-stone-800 z-40 bg-white border-b border-stone-100 shrink-0">
+      <div className="h-8 pt-1.5 px-6 flex justify-between items-center text-xs font-semibold text-stone-800 z-40 bg-white shrink-0">
         <span className="font-bold text-[11px]">9:41</span>
-        {roleBadge && (
-          <span className={`text-[9px] uppercase font-bold tracking-wider px-2 py-0.5 rounded-full ${roleBadge.color}`}>
-            {roleBadge.text}
-          </span>
-        )}
         <div className="flex items-center gap-1.5 opacity-80 text-stone-700">
           <Signal className="w-3.5 h-3.5" />
           <Wifi className="w-3.5 h-3.5" />
           <Battery className="w-4 h-4" />
         </div>
       </div>
+
+      {/* Role Badge Indicator (Below status bar to avoid notch overlap) */}
+      {roleBadge && (
+        <div className="py-1 px-4 bg-stone-50 border-b border-stone-100 flex items-center justify-center shrink-0 z-30">
+          <span className={`text-[10px] uppercase font-bold tracking-wider px-2.5 py-0.5 rounded-full ${roleBadge.color}`}>
+            {roleBadge.text}
+          </span>
+        </div>
+      )}
 
       {/* Content Body with exact soft off-white background from wireframe */}
       <div className="flex-1 overflow-y-auto relative flex flex-col bg-[#F8FAF9] text-stone-900">
