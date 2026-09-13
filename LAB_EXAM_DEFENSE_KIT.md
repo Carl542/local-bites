@@ -68,9 +68,9 @@ Create these 4 columns on your agency's Trello board:
 
 ### 2.2 Trello Cards Setup (Copy-paste these cards into your board):
 
-#### **Card 1: [PM] Sprint Planning, User Story Definition & Backlog Grooming**
+#### **Card 1: [PM] User Story 1 & 2 Definition and Sprint Planning**
 - **Column:** `✅ Done`
-- **Owner:** Project Manager
+- **Owner:** ALISOSO, Allen Kenneth G. (Project Manager / Lead Architect)
 - **Points:** 3 pts
 - **Description:**
   Define persona (Chef Maria, Green Leaf Bistro), acceptance criteria for US-1 (Farmer Inventory) and US-2 (Buyer Ordering & Stock Validation), and matrix mapping.
@@ -81,7 +81,7 @@ Create these 4 columns on your agency's Trello board:
 
 #### **Card 2: [PM] Trello Board Hygiene Audit & Zero-Stale Card Verification**
 - **Column:** `✅ Done`
-- **Owner:** Project Manager
+- **Owner:** ALISOSO, Allen Kenneth G. (Project Manager / Lead Architect)
 - **Points:** 2 pts
 - **Description:**
   Audit every card for assigned owners, activity logs, due dates, and story points to prevent the 5-point stale card penalty.
@@ -92,7 +92,7 @@ Create these 4 columns on your agency's Trello board:
 
 #### **Card 3: [FE] Produce Catalog & Live Filter System**
 - **Column:** `✅ Done`
-- **Owner:** Frontend Engineer
+- **Owner:** AMIL, Carl Vincent S. (Frontend Specialist)
 - **Points:** 5 pts
 - **Description:**
   Build mobile-first category switcher, live search, and farm badge filters for fresh vegetables, fruits, and herbs.
@@ -103,7 +103,7 @@ Create these 4 columns on your agency's Trello board:
 
 #### **Card 4: [FE] Produce Detail Modal & Batch Reserve Profile**
 - **Column:** `✅ Done`
-- **Owner:** Frontend Engineer
+- **Owner:** AMIL, Carl Vincent S. (Frontend Specialist)
 - **Points:** 5 pts
 - **Description:**
   Implement high-res hero image, farm accreditation card, field reserve indicator, and Brix sweetness/moisture graph.
@@ -114,7 +114,7 @@ Create these 4 columns on your agency's Trello board:
 
 #### **Card 5: [FE] Cart & Checkout Multi-Stage Modal**
 - **Column:** `✅ Done`
-- **Owner:** Frontend Engineer
+- **Owner:** AMIL, Carl Vincent S. (Frontend Specialist)
 - **Points:** 5 pts
 - **Description:**
   Build Cart modal with breadcrumbs, produce stepper, co-op cold transport note, and auto-adjusted stock banner.
@@ -125,7 +125,7 @@ Create these 4 columns on your agency's Trello board:
 
 #### **Card 6: [FE] Live Stock Validation & Insufficient Stock Alert Screen**
 - **Column:** `✅ Done`
-- **Owner:** Frontend Engineer
+- **Owner:** AMIL, Carl Vincent S. (Frontend Specialist)
 - **Points:** 5 pts
 - **Description:**
   Build validation animation overlay and visual breakdown card for claimed vs remaining stock.
@@ -136,7 +136,7 @@ Create these 4 columns on your agency's Trello board:
 
 #### **Card 7: [FE] Order Confirmation & Dispatch Tracking UI**
 - **Column:** `✅ Done`
-- **Owner:** Frontend Engineer
+- **Owner:** AMIL, Carl Vincent S. (Frontend Specialist)
 - **Points:** 5 pts
 - **Description:**
   Implement Order Confirmation #ORD-1026 and Live Dispatch Tracking screen with active timeline and driver GPS card.
@@ -147,7 +147,7 @@ Create these 4 columns on your agency's Trello board:
 
 #### **Card 8: [BE] REST API Client & Service Layer (`src/services/api.ts`)**
 - **Column:** `✅ Done`
-- **Owner:** Backend Engineer
+- **Owner:** ALGONES, Mark Anthony L. (Backend / Database Engineer)
 - **Points:** 5 pts
 - **Description:**
   Implement clean API service layer with endpoint contracts returning standard HTTP status codes.
@@ -159,7 +159,7 @@ Create these 4 columns on your agency's Trello board:
 
 #### **Card 9: [BE] Stock Consistency & Concurrency Transaction Logic**
 - **Column:** `✅ Done`
-- **Owner:** Backend Engineer
+- **Owner:** ALGONES, Mark Anthony L. (Backend / Database Engineer)
 - **Points:** 5 pts
 - **Description:**
   Implement atomic inventory reservation logic preventing race conditions and overselling across concurrent buyers.
@@ -170,7 +170,7 @@ Create these 4 columns on your agency's Trello board:
 
 #### **Card 10: [BE] API Status & Network Traffic Inspector Component**
 - **Column:** `✅ Done`
-- **Owner:** Backend Engineer
+- **Owner:** ALGONES, Mark Anthony L. (Backend / Database Engineer)
 - **Points:** 3 pts
 - **Description:**
   Create in-app inspector modal to demonstrate live network traffic, latency, and HTTP status codes to evaluators.
@@ -181,7 +181,7 @@ Create these 4 columns on your agency's Trello board:
 
 #### **Card 11: [DevOps] Git Repository Setup & Feature Branching Architecture**
 - **Column:** `✅ Done`
-- **Owner:** DevOps Engineer
+- **Owner:** ALCOVER, Gem Joush E. (QA / DevOps Lead)
 - **Points:** 3 pts
 - **Description:**
   Initialize Git repository, configure `.gitignore`, establish GitFlow branching model (`main`, `develop`, `feature/*`), and merge pull requests.
@@ -192,7 +192,7 @@ Create these 4 columns on your agency's Trello board:
 
 #### **Card 12: [DevOps] CI/CD Pipeline Automation (`.github/workflows/ci.yml`)**
 - **Column:** `✅ Done`
-- **Owner:** DevOps Engineer
+- **Owner:** ALCOVER, Gem Joush E. (QA / DevOps Lead)
 - **Points:** 5 pts
 - **Description:**
   Write GitHub Actions CI workflow to enforce linting, TypeScript compilation, and production build checks on pull requests.
@@ -203,7 +203,7 @@ Create these 4 columns on your agency's Trello board:
 
 #### **Card 13: [DevOps] Production Build & Bundle Optimization**
 - **Column:** `✅ Done`
-- **Owner:** DevOps Engineer
+- **Owner:** ALCOVER, Gem Joush E. (QA / DevOps Lead)
 - **Points:** 3 pts
 - **Description:**
   Validate production bundle size, eliminate dead code, and ensure zero-warning TypeScript builds.
@@ -214,7 +214,7 @@ Create these 4 columns on your agency's Trello board:
 
 #### **Card 14: [FE/QA] WCAG 2.1 AA Accessibility & Focus Ring Enforcement**
 - **Column:** `✅ Done`
-- **Owner:** Frontend Engineer
+- **Owner:** AMIL, Carl Vincent S. (Frontend Specialist)
 - **Points:** 3 pts
 - **Description:**
   Implement global keyboard focus rings (`*:focus-visible`) and audit text contrast ratios to satisfy 4.5:1 standards.
@@ -225,7 +225,7 @@ Create these 4 columns on your agency's Trello board:
 
 #### **Card 15: [PM/BE] Cold-Chain Logistics & Driver Integration Specs**
 - **Column:** `✅ Done`
-- **Owner:** Project Manager
+- **Owner:** ALISOSO, Allen Kenneth G. & ALGONES, Mark Anthony L.
 - **Points:** 2 pts
 - **Description:**
   Document Digos Co-op cold-chain transport parameters (temperature threshold 12°C, Van 2 courier assignment).
@@ -236,7 +236,7 @@ Create these 4 columns on your agency's Trello board:
 
 #### **Card 16: [QA] End-to-End User Story Verification & Defense Dry-Run**
 - **Column:** `✅ Done`
-- **Owner:** DevOps / QA Engineer
+- **Owner:** ALCOVER, Gem Joush E. (QA / DevOps Lead)
 - **Points:** 2 pts
 - **Description:**
   Execute end-to-end testing of US-1 and US-2 flows across single and split viewports.
@@ -318,29 +318,29 @@ Implemented globally in `src/index.css`:
 
 ### ⏱️ 10-Minute Presentation Script by Agency Role
 
-#### **1. Project Manager (PM) – 2 Minutes:**
-> *"Good morning instructors and panel. I am the Project Manager for the Local Bites Agency.  
+#### **1. ALISOSO, Allen Kenneth G. (Project Manager / Lead Architect) – 2 Minutes:**
+> *"Good morning instructors and panel. I am Allen Kenneth Alisoso, the Project Manager and Lead Architect for the Local Bites Agency.  
 > Our sprint goal was to build a working, reliable MVP for Digos City's farm-to-table cooperative, specifically addressing the critical business risk of **overselling fresh produce** between farmers and restaurants.  
 > On our Trello board, you can see our disciplined sprint hygiene: we committed to 16 user-story cards across our 4 roles, achieving an **88% sprint throughput** with **zero stale cards**. Every ticket has clear Given-When-Then acceptance criteria, story points, and active commit logs.  
-> I will now hand over to our Frontend Engineer to demonstrate our live running feature."*
+> I will now hand over to our Frontend Specialist, Carl Vincent Amil, to demonstrate our live running feature."*
 
-#### **2. Frontend Engineer – 2.5 Minutes:**
-> *"Hello, I am the Frontend Engineer. I was responsible for component decomposition, Figma design token mapping, and accessibility.  
+#### **2. AMIL, Carl Vincent S. (Frontend Specialist) – 2.5 Minutes:**
+> *"Hello, I am Carl Vincent Amil, the Frontend Specialist. I was responsible for component decomposition, Figma design token mapping, mobile responsiveness, and WCAG accessibility.  
 > In `src/index.css`, we eliminated arbitrary colors by establishing a strict design token system. We also enforced WCAG 2.1 AA standards with 4.5:1 text contrast and global `*:focus-visible` keyboard rings.  
 > Let me demonstrate our running feature live in `http://localhost:5173`:  
 > Here is Chef Maria from Green Leaf Bistro. She views Juan's Roma Tomatoes batch with morning harvest timestamps and a Brix sweetness score. She adds 15 kg to her cart.  
 > Notice our dual view: when we simulate a concurrent buyer taking 20 kg, Chef Maria's checkout triggers our validation state. Instead of failing blindly, our UI shows an intuitive 2-segment visualizer and auto-adjusts to the remaining 10 kg. When confirmed, Order #ORD-1026 routes directly to the dispatch timeline."*
 
-#### **3. Backend / Database Engineer – 2.5 Minutes:**
-> *"Good morning, I am the Backend Engineer. I architected our API contracts and inventory transaction safety.  
+#### **3. ALGONES, Mark Anthony L. (Backend / Database Engineer) – 2.5 Minutes:**
+> *"Good morning, I am Mark Anthony Algones, the Backend and Database Engineer. I architected our API contracts, database structure, and inventory transaction safety.  
 > To satisfy Category 1.2 and 1.3, we engineered a dedicated API service layer in `src/services/api.ts` with explicit HTTP status handling.  
 > Let me open our **API & DB Status Inspector** in the demo toolbar:  
 > When the buyer attempts to order 15 kg with only 10 kg remaining, our `POST /api/orders/validate` endpoint rejects the transaction with a `400 Bad Request` and structured shortage metadata.  
 > Once the quantity is adjusted to 10 kg, the endpoint returns `200 OK`. Upon confirmation, `POST /api/orders` commits the transaction with a `201 Created` status code and atomically locks the batch in our local database tables. This guarantees zero inventory discrepancy."*
 
-#### **4. DevOps / QA Engineer – 2 Minutes:**
-> *"Hello panel, I am the DevOps and QA Engineer.  
-> Our repository adheres to strict GitFlow branching conventions. Feature branches (`feature/US1-farmer-inventory`, `feature/US2-buyer-ordering`, and `feature/backend-api-service-layer`) were merged into `develop` and `main` with verified PR messages.  
+#### **4. ALCOVER, Gem Joush E. (QA / DevOps Lead) – 2 Minutes:**
+> *"Hello panel, I am Gem Joush Alcover, the QA and DevOps Lead.  
+> Our repository adheres to strict GitFlow branching conventions. Feature branches (`feature/US1-farmer-inventory`, `feature/US2-buyer-ordering`, and `feature/api-service-layer`) were merged into `develop` and `main` with verified PR messages.  
 > In `.github/workflows/ci.yml`, we implemented an automated GitHub Actions CI pipeline that executes on every push and PR. It runs linting, strict TypeScript checks (`tsc -b --noEmit`), and production bundle compilation.  
 > In our local terminal, running `npm run build` exits with code 0 and bundles in under 500 milliseconds. The application is completely stable and production-ready."*
 
