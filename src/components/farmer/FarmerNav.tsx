@@ -27,7 +27,7 @@ export const FarmerNav: React.FC = () => {
   ];
 
   return (
-    <div className="bg-white border-t border-stone-200 px-3 py-2 flex justify-around items-center shrink-0 z-30">
+    <div className="bg-white border-t border-stone-200 px-3 py-2 flex justify-around items-center shrink-0 z-30 sticky bottom-0 shadow-xs">
       {navItems.map((item) => {
         const Icon = item.icon;
         const isActive = activeFarmerTab === item.id;

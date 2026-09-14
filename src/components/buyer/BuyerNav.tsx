@@ -29,7 +29,7 @@ export const BuyerNav: React.FC = () => {
   };
 
   return (
-    <div className="bg-white border-t border-stone-200/90 px-4 py-2 flex justify-around items-center shrink-0 z-30 shadow-xs">
+    <div className="bg-white border-t border-stone-200/90 px-4 py-2 flex justify-around items-center shrink-0 z-30 shadow-xs sticky bottom-0">
       {navItems.map((item) => {
         const Icon = item.icon;
         const isActive = activeBuyerTab === item.id;
