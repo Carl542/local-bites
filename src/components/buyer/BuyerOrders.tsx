@@ -24,7 +24,7 @@ interface BuyerOrdersProps {
 }
 
 export const BuyerOrders: React.FC<BuyerOrdersProps> = ({ onSelectOrder }) => {
-  const { orders, cart, setIsCartOpen } = useApp();
+  const { orders, cart, setIsCartOpen, setActiveBuyerTab } = useApp();
   const [activeFilter, setActiveFilter] = useState<OrderFilterTab>('all');
 
   return (
@@ -68,12 +68,14 @@ export const BuyerOrders: React.FC<BuyerOrdersProps> = ({ onSelectOrder }) => {
             )}
           </button>
 
-          <div
-            className="w-8 h-8 rounded-full bg-[#0A4A29] flex items-center justify-center text-white shadow-xs cursor-pointer hover:opacity-90 transition-opacity"
-            title="Chef Makiboi (Green Leaf Bistro)"
+          <button
+            type="button"
+            onClick={() => setActiveBuyerTab('more')}
+            className="w-8 h-8 rounded-full bg-[#0A4A29] ring-2 ring-emerald-200 flex items-center justify-center text-white shadow-xs cursor-pointer hover:opacity-90 transition-all hover:scale-105 active:scale-95"
+            title="Open Chef Makiboi Account & Settings"
           >
             <User className="w-4 h-4" />
-          </div>
+          </button>
         </div>
       </header>
 

@@ -56,7 +56,11 @@ export const FarmerHome: React.FC = () => {
         </div>
 
         {/* User Circular Avatar Button */}
-        <button className="w-8 h-8 rounded-full bg-[#0B4A2A] flex items-center justify-center text-white shadow-2xs hover:opacity-90 transition-opacity">
+        <button
+          onClick={() => setActiveFarmerTab('more')}
+          title="Open Farmer Profile & Settings"
+          className="w-8 h-8 rounded-full bg-[#0B4A2A] ring-2 ring-[#DCFCE7] flex items-center justify-center text-white shadow-2xs hover:opacity-90 transition-all cursor-pointer hover:scale-105 active:scale-95"
+        >
           <User className="w-4 h-4 text-white" />
         </button>
       </div>

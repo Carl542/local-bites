@@ -84,8 +84,9 @@ export const BuyerHome: React.FC = () => {
 
             <button
               type="button"
-              className="w-7 h-7 rounded-full bg-[#0B4A2A] flex items-center justify-center text-white shadow-2xs hover:opacity-90 transition-opacity cursor-pointer"
-              title="Chef Makiboi"
+              onClick={() => setActiveBuyerTab('more')}
+              className="w-7 h-7 rounded-full bg-[#0B4A2A] ring-2 ring-emerald-200 flex items-center justify-center text-white shadow-2xs hover:opacity-90 transition-all cursor-pointer hover:scale-105 active:scale-95"
+              title="Open Chef Makiboi Account & Settings"
             >
               <User className="w-3.5 h-3.5 text-white" />
             </button>
