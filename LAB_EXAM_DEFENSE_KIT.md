@@ -1,5 +1,5 @@
 # 🏆 Local Bites Cooperative – Lab Progress Exam & Project Defense Kit
-> **Course:** BSIT-4 Capstone / Web Engineering Lab  
+> **Course:** BSIT - IT PROF ELEC 5 / Web Engineering Lab  
 > **Agency / Team:** Local Bites Agency (Group 1)  
 > **Target Score:** 100 / 100 Points (Grade: 100%)  
 > **Repository:** `local-bites` (Digos City Farm-to-Table Cooperative Platform)  

@@ -54,7 +54,7 @@ export const DemoToolbar: React.FC = () => {
                 </span>
               </div>
               <span className="text-[11px] text-stone-400 block -mt-0.5">
-                BSIT-4 Capstone Prototype • Digos City Farm-to-Table
+                BSIT - IT PROF ELEC 5 • Digos City Farm-to-Table
               </span>
             </div>
           </div>
@@ -321,7 +321,7 @@ export const DemoToolbar: React.FC = () => {
             <div className="flex justify-between items-start pb-3 border-b border-stone-800">
               <div>
                 <span className="text-[10px] font-bold uppercase tracking-wider text-emerald-400">
-                  Group 1 • BSIT – 4
+                  Group 1 • BSIT - IT PROF ELEC 5
                 </span>
                 <h3 className="text-lg font-extrabold text-white">
                   Local Bites Cooperative System

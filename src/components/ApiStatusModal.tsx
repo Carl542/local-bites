@@ -231,7 +231,7 @@ export const ApiStatusModal: React.FC<ApiStatusModalProps> = ({ isOpen, onClose 
         {/* Modal Footer */}
         <div className="px-5 py-3 border-t border-stone-800 bg-stone-950 flex items-center justify-between text-xs">
           <span className="text-[11px] text-stone-400">
-            BSIT-4 Capstone Architecture • Local Bites Cooperative
+            BSIT - IT PROF ELEC 5 Architecture • Local Bites Cooperative
           </span>
           <button
             type="button"
