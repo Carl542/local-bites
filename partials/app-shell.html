@@ -1,0 +1,353 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LocalBites — Fresh from local farms</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/app.css?v=20261103-74" />
+  </head>
+  <body>
+    <section id="role-screen" class="role-screen" aria-labelledby="portal-title">
+      <div class="role-scenery role-scenery-left" aria-hidden="true">
+        <img src="assets/portal-farm-v2.png" alt="" />
+        <span class="scenery-wash"></span>
+        <span class="brush-label farm-label">From<br>Our Farms<br>to Your Table<i></i></span>
+      </div>
+      <div class="role-scenery role-scenery-right" aria-hidden="true">
+        <img src="assets/portal-produce-v2.png" alt="" />
+        <span class="scenery-wash"></span>
+        <span class="brush-label fresh-label">Fresh.<br>Local.<br>Sustainable.<i></i></span>
+      </div>
+
+      <div class="role-card">
+        <header class="role-header">
+          <a class="brand role-brand" href="#" aria-label="LocalBites home">
+            <span class="brand-mark" aria-hidden="true">
+              <svg viewBox="0 0 48 48" role="img"><path d="M24 40V20M24 30C14 29 10 23 10 14c9 0 15 5 14 16Zm0-4c1-10 7-15 16-16 0 9-5 15-16 16Z"/></svg>
+            </span>
+            <span>
+              <strong>LocalBites</strong>
+              <small>FARMER CO-OP</small>
+            </span>
+          </a>
+          <p class="role-kicker">FRESH FOOD <i>•</i> STRONGER COMMUNITIES <i>•</i> BRIGHTER TOMORROWS</p>
+          <h1 id="portal-title">How will you use <span>LocalBites?</span></h1>
+          <p class="role-intro">Choose a portal, then sign in or create a new account.</p>
+        </header>
+
+        <div class="role-options">
+          <button class="portal-card buyer-card" data-role="buyer" type="button">
+            <span class="portal-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M3 4h2l2.2 9.2a2 2 0 0 0 2 1.5h7.7a2 2 0 0 0 1.9-1.4L20.5 7H7M10 19a1 1 0 1 1-2 0 1 1 0 0 1 2 0Zm8 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z"/></svg>
+            </span>
+            <strong>I’m a Buyer</strong>
+            <small>Browse fresh harvests, place orders, and support local farmers.</small>
+            <ul>
+              <li>Access fresh, local produce</li>
+              <li>Place and track orders</li>
+              <li>Support local farming communities</li>
+            </ul>
+            <b>Continue as Buyer <span aria-hidden="true">→</span></b>
+          </button>
+
+          <button class="portal-card seller-card" data-role="seller" type="button">
+            <span class="portal-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M12 21v-9m0 4c-5 0-8-3-8-8 5 0 8 3 8 8Zm0-4c0-5 3-8 8-8 0 5-3 8-8 8ZM5 21h14"/></svg>
+            </span>
+            <strong>I’m a Seller</strong>
+            <small>Manage your farm, list products, and reach more customers.</small>
+            <ul>
+              <li>List and manage your products</li>
+              <li>Track orders and deliveries</li>
+              <li>Grow your farm business</li>
+            </ul>
+            <b>Continue as Seller <span aria-hidden="true">→</span></b>
+          </button>
+        </div>
+
+        <div class="role-benefits" aria-label="LocalBites benefits">
+          <div><span>↗</span><p><strong>Fresh Produce</strong><small>Direct from local farms</small></p></div>
+          <div><span>♟</span><p><strong>Support Farmers</strong><small>Fair prices, better livelihoods</small></p></div>
+          <div><span>▰</span><p><strong>Reliable Delivery</strong><small>Track your orders easily</small></p></div>
+          <div><span>◎</span><p><strong>Sustainable Future</strong><small>Stronger local communities</small></p></div>
+        </div>
+
+        <footer class="role-footer"><span>◆</span> LocalBites Farmer Cooperative <span>◆</span><small>Connecting People · Cultivating Opportunities · Growing Together</small></footer>
+      </div>
+    </section>
+    <div class="app-shell" id="buyer-app" style="display:none">
+      <header class="topbar buyer-topbar">
+        <a class="brand" href="#home">
+          <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 48 48"><path d="M24 40V20M24 30C14 29 10 23 10 14c9 0 15 5 14 16Zm0-4c1-10 7-15 16-16 0 9-5 15-16 16Z"/></svg></span>
+          <span>
+            <strong>LocalBites</strong>
+            <small>FARMER CO-OP</small>
+          </span>
+        </a>
+        <nav class="desktop-nav">
+          <a class="active" href="#home"><span aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m3 11 9-8 9 8v9H5v-9Z"/><path d="M9 20v-6h6v6"/></svg></span> Home</a>
+          <a href="#browse"><span aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m16 16 5 5"/></svg></span> Browse</a>
+          <a href="#orders"><span aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 10h18M8 14h3M8 17h6"/></svg></span> Orders</a>
+          <a href="#about"><span aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7h.01"/></svg></span> About</a>
+        </nav>
+        <div class="buyer-top-search"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m16 16 5 5"/></svg><input id="search-input" aria-label="Search products" placeholder="Search fresh vegetables, fruits, herbs..." /><button class="filter-btn buyer-search-filter" type="button" aria-label="Browse product categories"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/><circle cx="9" cy="6" r="2"/><circle cx="15" cy="12" r="2"/><circle cx="7" cy="18" r="2"/></svg></button></div>
+        <button class="icon-button cart-button" id="open-cart" aria-label="Open cart"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 3h2l2.4 11.2a2 2 0 0 0 2 1.6h7.8a2 2 0 0 0 2-1.6L21 7H6"/><circle cx="10" cy="20" r="1.4"/><circle cx="18" cy="20" r="1.4"/></svg><b id="cart-count">0</b></button>
+        <div class="buyer-account">
+          <button class="buyer-profile-button" type="button" aria-label="Open buyer account menu" aria-haspopup="menu" aria-expanded="false"><span class="buyer-profile-avatar">B</span><span class="profile-copy"><strong>Buyer</strong><small>Buyer</small></span><i aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m7 10 5 5 5-5"/></svg></i></button>
+          <div class="buyer-account-menu" role="menu" hidden>
+            <button type="button" role="menuitem" data-buyer-account="profile"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 22c0-5 3-8 8-8s8 3 8 8"/></svg><span><strong>My Profile</strong><small>Account &amp; delivery details</small></span></button>
+            <button type="button" role="menuitem" data-buyer-account="logout"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10 5H5v14h5M14 8l4 4-4 4m4-4H9"/></svg><span><strong>Log out</strong><small>Sign out securely</small></span></button>
+          </div>
+        </div>
+      </header>
+      <main class="buyer-storefront">
+        <div class="buyer-main-column">
+        <section id="home" class="buyer-market-hero">
+          <div class="buyer-hero-copy"><div class="eyebrow"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4C12 4 6 8 6 16c8 0 12-5 14-12ZM6 16c-1 1-2 3-2 5"/></svg> SUPPORT LOCAL FARMERS</div><h1>Fresh Produce,<br>Better Tomorrow</h1><p class="lede">Buy directly from local farmers in Digos City.<br>Fresh, healthy, and sustainable.</p><div class="buyer-hero-benefits" aria-label="LocalBites marketplace benefits"><div><span><svg viewBox="0 0 24 24"><path d="M20 4C12 4 6 8 6 16c8 0 12-5 14-12ZM6 16c-1 1-2 3-2 5"/></svg></span><p><strong>Fresh</strong><small>Direct from farms</small></p></div><div><span><svg viewBox="0 0 24 24"><circle cx="8" cy="8" r="3"/><circle cx="16" cy="8" r="3"/><circle cx="12" cy="15" r="3"/><path d="M2 21c0-4 2-7 6-7m8 0c4 0 6 3 6 7M6 21c0-4 2-7 6-7s6 3 6 7"/></svg></span><p><strong>Local</strong><small>Support farmers</small></p></div><div><span><svg viewBox="0 0 24 24"><path d="M20 4C12 4 6 8 6 16c8 0 12-5 14-12ZM6 16c-1 1-2 3-2 5"/><path d="M5 5c-2 4-1 7 2 9"/></svg></span><p><strong>Sustainable</strong><small>A healthier tomorrow</small></p></div></div><a class="buyer-browse-cta" href="#browse">Browse Products <span aria-hidden="true">→</span></a></div>
+          <div class="buyer-hero-art" aria-hidden="true"><div class="buyer-hero-script">Local<br>Fresh<br>Sustainable<i></i></div><div class="buyer-hero-community"><svg viewBox="0 0 24 24"><path d="M20 4C12 4 6 8 6 16c8 0 12-5 14-12ZM6 16c-1 1-2 3-2 5"/></svg><span>Good Food<br>Brighter Communities</span></div><i class="hero-leaf one"></i><i class="hero-leaf two"></i><i class="hero-leaf three"></i></div>
+        </section>
+        <section class="buyer-section buyer-category-section">
+          <div class="section-heading buyer-category-heading">
+            <div><h2><span class="buyer-heading-leaf" aria-hidden="true"><svg viewBox="0 0 32 32"><path d="M27 4C15 5 7 11 5 25c10 1 19-6 22-21Z"/><path d="M5 28c4-8 9-13 17-18"/></svg></span> Shop by Category</h2><p>Explore fresh produce from trusted local farmers</p></div>
+            <a href="#browse">View All Categories&nbsp; →</a>
+          </div>
+          <div class="categories">
+            <button data-category="Vegetables"><span class="category-icon vegetables" aria-hidden="true"><svg viewBox="0 0 48 48"><path d="M23 43C7 39 5 24 13 16c5 2 8 5 10 10-1-10 4-18 12-21 8 11 5 27-12 38Z"/><path d="M23 42c0-15 4-24 12-35M22 32 12 19m12 8 11-9"/></svg></span><strong>Vegetables</strong>
+              <small>0 items</small>
+            </button>
+            <button data-category="Fruits"><span class="category-icon fruits" aria-hidden="true"><svg viewBox="0 0 48 48"><path d="M25 15c-4-6-1-11 6-12 1 6-1 10-6 12Z"/><path d="M23 15c-13-6-20 4-17 16 3 12 12 15 18 9 7 6 16 3 19-10 3-12-6-20-20-15Z"/><path d="M23 15c3-4 7-5 12-4"/></svg></span><strong>Fruits</strong>
+              <small>0 items</small>
+            </button>
+            <button data-category="Herbs"><span class="category-icon herbs" aria-hidden="true"><svg viewBox="0 0 48 48"><path d="M8 40c11-13 20-22 33-32"/><path d="M15 31C5 31 3 24 5 18c8 0 13 4 10 13Zm9-9c-6-9-1-16 7-18 4 8 1 15-7 18Zm3 8c3-9 10-12 17-9-1 8-7 13-17 9Z"/></svg></span><strong>Herbs</strong>
+              <small>0 items</small>
+            </button>
+            <button data-category="Dairy &amp; Eggs"><span class="category-icon dairy" aria-hidden="true"><svg viewBox="0 0 48 48"><path d="M24 5c-7 0-15 15-15 25 0 9 6 14 15 14s15-5 15-14C39 20 31 5 24 5Z"/></svg></span><strong>Dairy &amp; Eggs</strong>
+              <small>0 items</small>
+            </button>
+            <button data-category="Meat &amp; Seafood"><span class="category-icon meat" aria-hidden="true"><svg viewBox="0 0 48 48"><path d="M38 7c8 6 6 18-3 25-8 7-20 12-28 4-7-8-1-17 8-20 8-3 14-15 23-9Z"/><path d="M33 14c4 3 3 8-1 11-4 4-10 4-13 1-3-4 0-8 4-9 4-1 7-5 10-3Z"/></svg></span><strong>Meat &amp; Seafood</strong>
+              <small>0 items</small>
+            </button>
+          </div>
+        </section>
+        <section id="featured-products" class="buyer-section buyer-featured-products">
+          <div class="section-heading">
+            <h2><span aria-hidden="true">✿</span> Featured Products</h2>
+            <a href="#browse">View All&nbsp; →</a>
+          </div>
+          <span id="buyer-products-status" class="sr-only">Live catalog</span>
+          <div id="product-grid"></div>
+        </section>
+        <section class="buyer-section buyer-farms-section" aria-labelledby="buyer-featured-farms-title">
+          <div class="buyer-farms-heading">
+            <div class="buyer-farms-title"><span aria-hidden="true"><svg viewBox="0 0 32 32"><path d="M27 4C15 5 7 11 5 25c10 1 19-6 22-21Z"/><path d="M5 28c4-8 9-13 17-18"/></svg></span><div><h2 id="buyer-featured-farms-title">Featured Farms</h2><p>Explore our local farms and fresh produce suppliers.</p></div></div>
+            <a class="buyer-farms-view-all" href="#browse">View All Farms <span aria-hidden="true">→</span></a>
+          </div>
+          <div id="buyer-featured-farms" class="buyer-featured-farms"><div class="farmer-empty">Loading partner farms…</div></div>
+          <div id="farmer-spotlight" hidden></div><span id="spotlight-location" hidden></span><span id="buyer-dispatch-time" hidden></span><span id="buyer-dispatch-farms" hidden></span>
+        </section>
+        </div>
+        <aside class="buyer-side-column">
+          <section class="buyer-cart-panel" aria-labelledby="buyer-cart-title"><header><div class="buyer-cart-heading"><h2 id="buyer-cart-title"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h2l2 11h11l2-8H6M9 20h.01M17 20h.01"/></svg>Your Cart</h2><p>Fresh harvest reserved for your kitchen.</p></div><button type="button" id="buyer-view-cart">View Cart <span aria-hidden="true">→</span></button></header><div id="buyer-cart-items" class="buyer-cart-items"></div><footer><div class="buyer-cart-subtotal"><span><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M9 8h6M9 12h6M9 16h4"/></svg>Subtotal</span><strong id="buyer-cart-total">₱0</strong></div><button id="buyer-checkout-btn" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16v12H4zM8 7V4h8v3M4 11h16"/></svg>Proceed to Checkout <span aria-hidden="true">→</span></button></footer></section>
+          <section id="about" class="buyer-benefits-panel" aria-labelledby="buyer-benefits-title">
+            <header class="buyer-benefits-heading"><h2 id="buyer-benefits-title"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 3.4 20.4 4 22 4c0 1.6.6 6.5-2.1 12.2A7 7 0 0 1 11 20Z"/><path d="M2 21c0-3 1.9-5.5 5.5-7.5 2.3-1.3 5.1-2.2 8.5-2.5"/></svg>Why LocalBites?</h2><p>More than just food — we support local farmers and communities.</p></header>
+            <div class="buyer-benefits-list">
+              <div class="buyer-benefit"><span aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M20 13c0 5-3.5 7.5-8 9-4.5-1.5-8-4-8-9V5l8-3 8 3v8Z"/><path d="m9 12 2 2 4-4"/></svg></span><p><strong>Fresh &amp; Quality Produce</strong><small>Direct from local farmers.</small></p></div>
+              <div class="buyer-benefit"><span aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M10 17h4V5H2v12h3"/><path d="M14 9h4l4 4v4h-3M14 17h1"/><circle cx="7.5" cy="17.5" r="2.5"/><circle cx="17.5" cy="17.5" r="2.5"/></svg></span><p><strong>Supports Local Farmers</strong><small>Stronger communities.</small></p></div>
+              <div class="buyer-benefit"><span aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 3.4 20.4 4 22 4c0 1.6.6 6.5-2.1 12.2A7 7 0 0 1 11 20Z"/><path d="M2 21c0-3 1.9-5.5 5.5-7.5 2.3-1.3 5.1-2.2 8.5-2.5"/></svg></span><p><strong>Sustainable Food System</strong><small>Good for you. Good for the planet.</small></p></div>
+              <div class="buyer-benefit"><span aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8l1.1 1.1L12 21l7.8-7.5 1.1-1.1a5.5 5.5 0 0 0-.1-7.8Z"/></svg></span><p><strong>Fair Prices</strong><small>More value for everyone.</small></p></div>
+            </div>
+          </section>
+        </aside>
+      </main>
+      <main id="buyer-browse-page" class="buyer-browse-page" hidden>
+        <section class="browse-hero">
+          <div><p><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 3.4 20.4 4 22 4c0 1.6.6 6.5-2.1 12.2A7 7 0 0 1 11 20Z"/><path d="M2 21c0-3 1.9-5.5 5.5-7.5 2.3-1.3 5.1-2.2 8.5-2.5"/></svg> FRESH FROM LOCAL FARMS</p><h1>Browse Products</h1><span>Discover fresh, healthy, and locally grown produce directly from our local farmers in Digos City.</span></div>
+          <div class="browse-hero-art" aria-hidden="true"><b>Support<br>Local Farmers<i></i></b></div>
+        </section>
+        <div class="browse-layout">
+          <aside class="browse-filters" aria-label="Product filters">
+            <h2><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 3.4 20.4 4 22 4c0 1.6.6 6.5-2.1 12.2A7 7 0 0 1 11 20Z"/></svg>Categories</h2>
+            <div id="browse-category-filters" class="browse-category-filters">
+              <button class="active" type="button" data-browse-category="All Items"><span class="category-icon all"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg></span><b>All Products</b><em>0</em></button>
+              <button type="button" data-browse-category="Vegetables"><span class="category-icon vegetables"><svg viewBox="0 0 48 48"><path d="M23 43C7 39 5 24 13 16c5 2 8 5 10 10-1-10 4-18 12-21 8 11 5 27-12 38Z"/><path d="M23 42c0-15 4-24 12-35M22 32 12 19m12 8 11-9"/></svg></span><b>Vegetables</b><em>0</em></button>
+              <button type="button" data-browse-category="Fruits"><span class="category-icon fruits"><svg viewBox="0 0 48 48"><path d="M25 15c-4-6-1-11 6-12 1 6-1 10-6 12Z"/><path d="M23 15c-13-6-20 4-17 16 3 12 12 15 18 9 7 6 16 3 19-10 3-12-6-20-20-15Z"/></svg></span><b>Fruits</b><em>0</em></button>
+              <button type="button" data-browse-category="Herbs"><span class="category-icon herbs"><svg viewBox="0 0 48 48"><path d="M8 40c11-13 20-22 33-32M15 31C5 31 3 24 5 18c8 0 13 4 10 13Zm9-9c-6-9-1-16 7-18 4 8 1 15-7 18Z"/></svg></span><b>Herbs</b><em>0</em></button>
+              <button type="button" data-browse-category="Dairy &amp; Eggs"><span class="category-icon dairy"><svg viewBox="0 0 48 48"><path d="M24 5c-7 0-15 15-15 25 0 9 6 14 15 14s15-5 15-14C39 20 31 5 24 5Z"/></svg></span><b>Dairy &amp; Eggs</b><em>0</em></button>
+              <button type="button" data-browse-category="Meat &amp; Seafood"><span class="category-icon meat"><svg viewBox="0 0 48 48"><path d="M38 7c8 6 6 18-3 25-8 7-20 12-28 4-7-8-1-17 8-20 8-3 14-15 23-9Z"/></svg></span><b>Meat &amp; Seafood</b><em>0</em></button>
+            </div>
+            <div class="browse-price-filter"><h3>₱ <span>Price Range</span></h3><div><label>Minimum price<input id="browse-price-min" type="number" min="0" step="0.01" placeholder="Min"></label><i>–</i><label>Maximum price<input id="browse-price-max" type="number" min="0" step="0.01" placeholder="Max"></label></div><button id="browse-apply-price" type="button">Apply Filter</button></div>
+          </aside>
+          <section class="browse-results">
+            <header><div><h2><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg><span id="browse-results-title">All Available Products</span></h2><p id="browse-results-count">Loading products…</p></div><label class="browse-search"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m16 16 5 5"/></svg><input id="browse-search-input" type="search" placeholder="Search products..." aria-label="Search available products"></label><label class="browse-sort"><svg viewBox="0 0 24 24"><path d="M8 7 5 4 2 7M5 4v16M16 17l3 3 3-3m-3 3V4"/></svg><span>Sort by<select id="browse-sort-select" aria-label="Sort products"><option value="newest">Newest First</option><option value="price-asc">Price: Low to High</option><option value="price-desc">Price: High to Low</option><option value="name">Name: A to Z</option></select></span></label></header>
+            <div id="browse-product-grid" class="browse-product-grid"><div class="order-empty">Loading available products…</div></div>
+          </section>
+        </div>
+      </main>
+      <main id="buyer-orders-page" class="buyer-orders-page" hidden>
+        <div class="buyer-orders-shell">
+          <header class="buyer-orders-hero">
+            <div class="buyer-orders-hero-copy"><p><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4C12 4 6 8 6 16c8 0 12-5 14-12ZM6 16c-1 1-2 3-2 5"/></svg>YOUR PURCHASES</p><h1>My Orders</h1><span>Track your purchases and stay updated on orders<br>from local farmers.</span></div>
+            <div class="buyer-orders-hero-art" aria-hidden="true"><i></i><i></i><b>Good Food<br>Brighter<br>Communities<em></em></b></div>
+          </header>
+          <section class="buyer-order-summary" aria-label="Order summary">
+            <article><span class="total"><svg viewBox="0 0 24 24"><path d="M6 8V6a6 6 0 0 1 12 0v2M4 8h16l-1 13H5L4 8Z"/></svg></span><div><small>Total Orders</small><strong id="buyer-orders-total">—</strong><em>All your orders</em></div></article>
+            <article><span class="active"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v6l4 2"/></svg></span><div><small>Active Orders</small><strong id="buyer-orders-active">—</strong><em>Orders still being fulfilled</em></div></article>
+            <article><span class="complete"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="m8 12 3 3 5-6"/></svg></span><div><small>Completed Orders</small><strong id="buyer-orders-completed">—</strong><em>Successfully completed</em></div></article>
+          </section>
+          <section class="buyer-order-history" aria-labelledby="buyer-order-history-title">
+            <h2 id="buyer-order-history-title" class="sr-only">Order History</h2>
+            <nav id="buyer-order-filters" class="buyer-order-filters" aria-label="Filter buyer orders">
+              <button class="active" type="button" data-buyer-order-filter="all">All Orders <b>0</b></button>
+              <button type="button" data-buyer-order-filter="pending">Pending <b>0</b></button>
+              <button type="button" data-buyer-order-filter="accepted">Accepted <b>0</b></button>
+              <button type="button" data-buyer-order-filter="ready_for_pickup">Ready for Pickup <b>0</b></button>
+              <button type="button" data-buyer-order-filter="dispatched">Dispatched <b>0</b></button>
+              <button type="button" data-buyer-order-filter="completed">Completed <b>0</b></button>
+              <button type="button" data-buyer-order-filter="delivered">Delivered <b>0</b></button>
+              <button type="button" data-buyer-order-filter="rejected">Rejected <b>0</b></button>
+            </nav>
+            <div id="orders-list" class="buyer-orders-list" aria-live="polite"><div class="buyer-orders-loading">Loading your orders…</div></div>
+          </section>
+        </div>
+      </main>
+      <nav class="mobile-nav">
+        <a class="active" href="#home">⌂<span>Home</span>
+        </a>
+        <a href="#browse">▣<span>Browse</span>
+        </a>
+        <a href="#orders">▤<span>Orders</span>
+        </a>
+        <a href="#about">☰<span>More</span.>
+        </a>
+      </nav>
+      <section id="buyer-order-detail-modal" class="buyer-order-detail-modal" role="dialog" aria-modal="true" aria-labelledby="buyer-order-detail-title" aria-hidden="true">
+        <div class="buyer-order-detail-card"><header><div><span aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 2h9l4 4v16H6zM14 2v5h5M9 12h7M9 16h7M9 8h2"/></svg></span><div><h2 id="buyer-order-detail-title">Order Details</h2><p>Purchase information and fulfillment progress.</p></div></div><button id="close-buyer-order-detail" type="button" aria-label="Close order details">&times;</button></header><div id="buyer-order-detail-body" class="buyer-order-detail-body"></div></div>
+      </section>
+    </div>
+    <section id="seller-app" class="seller-app">
+      <aside class="seller-sidebar" aria-label="Seller navigation">
+        <a class="brand seller-brand" href="#seller-dashboard" aria-label="LocalBites Seller Dashboard"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 48 48"><path d="M24 40V21M24 26C15 26 9 20 9 11c10-1 16 5 15 15Zm0 4c10 0 17-6 17-17-11-1-18 6-17 17Z"/></svg></span><span class="seller-brand-copy"><strong>LocalBites</strong><small>FARMER CO-OP</small><em>Empowering Local Farmers</em></span></a>
+        <nav class="seller-nav">
+          <button class="active" type="button" data-seller-action="dashboard"><span class="seller-nav-icon"><svg viewBox="0 0 24 24"><path d="m3 11 9-8 9 8M5 10v10h14V10M9 20v-6h6v6"/></svg></span><span class="seller-nav-copy"><strong>Dashboard</strong><small>Overview &amp; Insights</small></span><svg class="seller-nav-chevron" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></svg></button>
+          <button type="button" data-seller-action="products"><span class="seller-nav-icon"><svg viewBox="0 0 24 24"><path d="m12 2 9 5-9 5-9-5 9-5Zm-9 5v10l9 5 9-5V7M12 12v10"/></svg></span><span class="seller-nav-copy"><strong>My Products</strong><small>Manage your products</small></span><svg class="seller-nav-chevron" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></svg></button>
+          <button type="button" data-seller-action="orders"><span class="seller-nav-icon"><svg viewBox="0 0 24 24"><path d="M6 2h9l4 4v16H6zM14 2v5h5M9 12h7M9 16h7M9 8h2"/></svg></span><span class="seller-nav-copy"><strong>Incoming Orders</strong><small>View and process orders</small></span><em id="seller-nav-pending" hidden>0</em><svg class="seller-nav-chevron" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></svg></button>
+          <button type="button" data-seller-action="deliveries"><span class="seller-nav-icon"><svg viewBox="0 0 24 24"><path d="M3 6h11v11H3zM14 10h4l3 4v3h-7M7 20a2 2 0 1 0 0-4 2 2 0 0 0 0 4Zm11 0a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z"/></svg></span><span class="seller-nav-copy"><strong>Deliveries</strong><small>Track and manage deliveries</small></span><svg class="seller-nav-chevron" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></svg></button>
+          <button type="button" data-seller-action="inventory"><span class="seller-nav-icon"><svg viewBox="0 0 24 24"><path d="M4 20V10M10 20V4M16 20v-7M22 20V7"/></svg></span><span class="seller-nav-copy"><strong>Inventory Alerts</strong><small>Low stock notifications</small></span><em id="seller-nav-alerts" hidden>0</em><svg class="seller-nav-chevron" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></svg></button>
+          <hr>
+          <button type="button" data-seller-action="profile"><span class="seller-nav-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 22c0-5 3-8 8-8s8 3 8 8"/></svg></span><span class="seller-nav-copy"><strong>Profile</strong><small>Your account and farm info</small></span><svg class="seller-nav-chevron" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></svg></button>
+          <button type="button" data-seller-action="settings"><span class="seller-nav-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a2 2 0 0 0 .4 2.2l.1.1-2.6 2.6-.1-.1a2 2 0 0 0-2.2-.4 2 2 0 0 0-1.2 1.8V21h-3.6v-.2A2 2 0 0 0 9 19a2 2 0 0 0-2.2.4l-.1.1-2.6-2.6.1-.1A2 2 0 0 0 4.6 15a2 2 0 0 0-1.8-1.2H2v-3.6h.8A2 2 0 0 0 4.6 9a2 2 0 0 0-.4-2.2l-.1-.1 2.6-2.6.1.1A2 2 0 0 0 9 4.6a2 2 0 0 0 1.2-1.8V2h3.6v.8A2 2 0 0 0 15 4.6a2 2 0 0 0 2.2-.4l.1-.1 2.6 2.6-.1.1a2 2 0 0 0-.4 2.2 2 2 0 0 0 1.8 1.2H22v3.6h-.8A2 2 0 0 0 19.4 15Z"/></svg></span><span class="seller-nav-copy"><strong>Settings</strong><small>App preferences</small></span><svg class="seller-nav-chevron" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></svg></button>
+        </nav>
+        <div class="seller-sidebar-promo"><img src="assets/seller-sidebar-landscape.svg" alt="" aria-hidden="true"><b>Fresh.<br>Local.<br>Sustainable.</b><i aria-hidden="true"></i><p><strong>Local Farmers</strong><span>Stronger Communities<br>Brighter Tomorrows</span></p></div>
+      </aside>
+      <button class="seller-sidebar-overlay" type="button" aria-label="Close seller navigation" tabindex="-1"></button>
+      <div class="seller-workspace">
+        <header class="seller-top">
+          <button class="seller-menu" type="button" aria-label="Toggle seller navigation">☰</button>
+          <div class="seller-top-title"><strong>Seller Portal</strong><small>Manage your farm and orders.</small></div>
+          <span class="seller-top-leaves" aria-hidden="true"><i></i><i></i></span>
+          <button class="seller-notification" type="button" data-seller-action="inventory" aria-label="View inventory alerts">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9ZM10 21h4"/></svg>
+            <i id="seller-alert-dot" hidden>0</i>
+          </button>
+          <button class="logout-btn seller-logout" type="button" aria-label="Log out">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10 5H5v14h5M14 8l4 4-4 4m4-4H9"/></svg>
+          </button>
+        </header>
+        <main class="seller-main" id="seller-dashboard">
+          <section class="seller-welcome">
+            <div><span class="seller-farm-badge" id="seller-farm-name">🌱 Your Farm</span><h1>Good morning, <span id="seller-greeting-name">farmer</span>!</h1><p>Let's share your harvest today and bring fresh food<br>to more tables.</p></div>
+            <div class="seller-welcome-art" aria-hidden="true"><img src="assets/portal-produce-v2.png" alt=""><span>Fresh.<br>Local.<br>Sustainable.</span></div>
+            <div class="seller-leaves seller-welcome-leaves" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+          </section>
+          <section class="seller-summary" aria-label="Seller dashboard statistics">
+            <article class="seller-stat products"><span class="seller-stat-icon" aria-hidden="true"><svg viewBox="0 0 48 48"><path d="m24 5 17 9-17 9L7 14l17-9Z"/><path d="M7 14v20l17 9V23L7 14Zm34 0v20l-17 9V23l17-9Z"/><path d="m15 10 17 9v8"/></svg></span><p>Total Products<strong id="seller-stat-products">—</strong><small id="seller-stock-note">Loading catalog…</small></p><i class="seller-stat-chevron" aria-hidden="true">›</i></article>
+            <article class="seller-stat pending"><span class="seller-stat-icon" aria-hidden="true"><svg viewBox="0 0 48 48"><path d="M5 8h6l4 23h22l5-16H14"/><circle cx="19" cy="39" r="3"/><circle cx="35" cy="39" r="3"/></svg></span><p>Pending Orders<strong id="seller-stat-pending">—</strong><small id="seller-pending-note">Loading orders…</small></p><i class="seller-stat-chevron" aria-hidden="true">›</i></article>
+            <article class="seller-stat deliveries"><span class="seller-stat-icon" aria-hidden="true"><svg viewBox="0 0 48 48"><path d="M4 12h26v23H4zM30 21h8l6 8v6H30z"/><circle cx="13" cy="38" r="4"/><circle cx="37" cy="38" r="4"/><path d="M34 24h4l3 5h-7z"/></svg></span><p>Active Deliveries<strong id="seller-stat-deliveries">—</strong><small id="seller-deliveries-note">Loading deliveries…</small></p><i class="seller-stat-chevron" aria-hidden="true">›</i></article>
+            <article class="seller-stat sales"><span class="seller-stat-icon" aria-hidden="true"><svg viewBox="0 0 48 48"><rect x="7" y="28" width="8" height="14" rx="2"/><rect x="20" y="18" width="8" height="24" rx="2"/><rect x="33" y="7" width="8" height="35" rx="2"/></svg></span><p>Total Sales<strong id="seller-stat-sales">—</strong><small id="seller-sales-note">Loading sales…</small></p><i class="seller-stat-chevron" aria-hidden="true">›</i></article>
+            <button class="add-product" type="button">＋ Add Product</button>
+          </section>
+          <section class="seller-dashboard-grid">
+            <article class="seller-dashboard-card seller-recent-orders"><header><span class="seller-panel-title"><i aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 2h9l4 4v16H6zM14 2v5h5M9 12h7M9 16h7M9 8h2"/></svg></i><h2>Recent Orders</h2></span><button type="button" data-seller-action="orders">View All <span aria-hidden="true">→</span></button></header><div id="seller-dashboard-orders" class="seller-dashboard-list"><p class="seller-loading">Loading orders…</p></div></article>
+            <article class="seller-dashboard-card seller-product-preview"><header><span class="seller-panel-title"><i aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m12 2 9 5-9 5-9-5 9-5Zm-9 5v10l9 5 9-5V7M12 12v10"/></svg></i><h2>My Products</h2></span><button type="button" data-seller-action="products">View All <span aria-hidden="true">→</span></button></header><div id="seller-dashboard-products" class="seller-dashboard-list"><p class="seller-loading">Loading products…</p></div></article>
+          </section>
+          <section class="seller-grow-banner"><span class="seller-grow-icon" aria-hidden="true"><svg viewBox="0 0 48 48"><path d="M23.8 38V20"/><path d="M24 22C15 22 10 17 10 9c9-1 15 4 14 13Z"/><path d="M24 27c10 0 16-6 16-15-10-1-17 5-16 15Z"/><path d="M15 38h19l-2 5H17l-2-5Z"/></svg></span><div><h2>Grow with LocalBites</h2><p>Together we build stronger farming communities and brighter tomorrows.</p></div><div class="seller-leaves seller-grow-leaves" aria-hidden="true"><i></i><i></i></div></section>
+          <p id="seller-dashboard-status" class="seller-dashboard-status" role="status"></p>
+        </main>
+      </div>
+    </section>
+    <aside class="cart-drawer" id="cart-drawer" role="dialog" aria-modal="true" aria-labelledby="cart-title" aria-hidden="true">
+      <header class="cart-header"><span class="cart-title-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 3h2l2.4 11.2a2 2 0 0 0 2 1.6h7.8a2 2 0 0 0 2-1.6L21 7H6"/><circle cx="10" cy="20" r="1.4"/><circle cx="18" cy="20" r="1.4"/></svg></span><div><h2 id="cart-title">Your Cart</h2><p class="cart-note">Fresh harvest reserved for your kitchen.</p></div><button id="close-cart" class="close-cart" type="button" aria-label="Close cart">&times;</button></header>
+      <div class="cart-source-note"><span aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 3.4 20.4 4 22 4c0 1.6.6 6.5-2.1 12.2A7 7 0 0 1 11 20Z"/><path d="M2 21c0-3 1.9-5.5 5.5-7.5 2.3-1.3 5.1-2.2 8.5-2.5"/></svg></span><p><strong>Locally sourced.</strong> Fresh and quality produce from our trusted farmers.</p></div>
+      <div class="cart-list-heading"><strong id="cart-item-count">0 items</strong><button id="clear-cart" class="clear-cart" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18M8 6V4h8v2M19 6l-1 15H6L5 6M10 11v6M14 11v6"/></svg>Clear Cart</button></div>
+      <div id="cart-items" class="cart-items"></div>
+      <div class="cart-footer">
+        <section class="cart-order-summary" aria-labelledby="cart-summary-title"><h3 id="cart-summary-title"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 8h2M14 8h2M8 12h2M14 12h2M8 16h2M14 16h2"/></svg>Order Summary</h3><dl><div><dt>Total Items</dt><dd id="cart-summary-items">0</dd></div><div><dt>Subtotal</dt><dd id="cart-summary-subtotal">₱0</dd></div><div class="cart-summary-total"><dt>Total</dt><dd id="cart-total">₱0</dd></div></dl></section>
+        <button id="checkout-btn" class="checkout-btn" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h2l2 11h11l2-8H6M9 20h.01M17 20h.01"/></svg>Continue to Checkout <span aria-hidden="true">→</span></button>
+        <button id="keep-shopping" class="keep-shopping" type="button"><span aria-hidden="true">←</span> Keep Shopping</button>
+      </div>
+    </aside>
+    <div class="cart-overlay" id="cart-overlay">
+    </div>
+    <div id="toast" role="status">
+    </div>
+    <section id="checkout-modal" class="checkout-modal" role="dialog" aria-modal="true" aria-labelledby="checkout-title" aria-hidden="true">
+      <div class="checkout-card">
+        <header class="checkout-heading">
+          <div><span class="checkout-secure"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="6" y="10" width="12" height="10" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3M12 14v2"/></svg>Secure Checkout</span><h2 id="checkout-title">Complete your order</h2><p>Review your details and confirm your order to support our local farmers.</p></div>
+          <button id="close-checkout" class="close-cart" type="button" aria-label="Close checkout">&times;</button>
+        </header>
+        <form id="checkout-form">
+          <div class="checkout-layout">
+            <div class="checkout-details">
+              <section class="checkout-form-section" aria-labelledby="checkout-contact-title">
+                <h3 id="checkout-contact-title"><span><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 22c0-5 3-8 8-8s8 3 8 8"/></svg></span>Contact Information</h3>
+                <div class="form-grid">
+                  <label>Buyer name<span class="checkout-input"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 22c0-5 3-8 8-8s8 3 8 8"/></svg><input id="checkout-name" name="name" required readonly></span></label>
+                  <label>Phone number<span class="checkout-input"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h4l2 5-3 2c2 4 4 6 8 8l2-3 5 2v4c0 1-1 2-2 2C10 23 1 14 2 3c0-1 1-2 3-2Z"/></svg><input id="checkout-phone" name="phone" type="tel" required minlength="7" maxlength="20" autocomplete="tel" placeholder="Your contact number"></span></label>
+                </div>
+              </section>
+              <section class="checkout-form-section" aria-labelledby="checkout-delivery-title">
+                <h3 id="checkout-delivery-title"><span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2"/></svg></span>Delivery Information</h3>
+                <label>Restaurant / Business name <small>(Optional)</small><span class="checkout-input"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10h16v11H4zM2 10l2-6h16l2 6M8 21v-6h4v6"/></svg><input name="business_name" autocomplete="organization" placeholder="Your business name"></span></label>
+                <label id="checkout-address-label">Complete delivery address<span class="checkout-input checkout-textarea"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2"/></svg><textarea id="checkout-address" name="address" required rows="2" maxlength="240" autocomplete="street-address" placeholder="House number, street, barangay, landmark, Digos City"></textarea></span><small id="checkout-address-help">Required for route dispatch.</small></label>
+                <h3><span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h11v11H3zM14 10h4l3 4v3h-7M7 20a2 2 0 1 0 0-4 2 2 0 0 0 0 4Zm11 0a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z"/></svg></span>Delivery Option</h3>
+                <div class="choice-row checkout-choice-row">
+                  <label><input type="radio" name="delivery" value="route_dispatch" checked><span class="choice-radio"></span><span class="choice-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h11v11H3zM14 10h4l3 4v3h-7M7 20a2 2 0 1 0 0-4 2 2 0 0 0 0 4Zm11 0a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z"/></svg></span><span><strong>Route dispatch</strong><small>Delivery timing confirmed after acceptance</small></span></label>
+                  <label><input type="radio" name="delivery" value="farm_pickup"><span class="choice-radio"></span><span class="choice-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m3 11 9-8 9 8M5 10v10h14V10M9 20v-6h6v6"/></svg></span><span><strong>Farm pickup</strong><small>Collect from the partner farm</small></span></label>
+                </div>
+              </section>
+              <section class="checkout-form-section" aria-labelledby="checkout-payment-title">
+                <h3 id="checkout-payment-title"><span><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 10h18M7 15h3"/></svg></span>Payment Method</h3>
+                <div class="choice-row checkout-choice-row">
+                  <label><input type="radio" name="payment" value="cash_on_delivery" checked><span class="choice-radio"></span><span class="choice-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="6" width="18" height="12" rx="2"/><circle cx="12" cy="12" r="3"/></svg></span><span><strong>Cash on delivery</strong><small>Pay upon receiving your order</small></span></label>
+                  <label><input type="radio" name="payment" value="gcash"><span class="choice-radio"></span><span class="choice-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="7" y="2" width="10" height="20" rx="2"/><path d="M11 18h2"/></svg></span><span><strong>GCash <em>(Demo)</em></strong><small>Demonstration payment option</small></span></label>
+                </div>
+              </section>
+            </div>
+            <aside class="checkout-review" aria-labelledby="checkout-summary-title">
+              <header><h3 id="checkout-summary-title"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M9 8h6M9 12h6M9 16h4"/></svg>Order Summary</h3><strong id="checkout-item-count">0 items</strong></header>
+              <div id="checkout-review-items" class="checkout-review-items"></div>
+              <dl class="checkout-totals"><div><dt>Subtotal</dt><dd id="checkout-subtotal">&#8369;0</dd></div><div class="checkout-total-row"><dt>Total Amount</dt><dd id="checkout-total">&#8369;0</dd></div></dl>
+              <div class="checkout-support"><span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4C12 4 6 8 6 16c8 0 12-5 14-12ZM6 16c-1 1-2 3-2 5"/></svg></span><p><strong>You're supporting local farmers!</strong><small>Your purchase helps local growers build a healthier, more sustainable community.</small></p></div>
+              <p id="checkout-status" class="checkout-status" role="status" aria-live="polite"></p>
+              <button class="place-order" type="submit"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h2l2 11h11l2-8H6M9 20h.01M17 20h.01"/></svg><span>Place Order</span><b aria-hidden="true">&rarr;</b></button>
+              <button id="back-to-cart" class="back-to-cart" type="button"><span aria-hidden="true">&larr;</span>Back to Cart</button>
+            </aside>
+          </div>
+        </form>
+        <div id="order-success" class="order-success">
+          <span>✓</span>
+          <h2>Order placed!</h2>
+          <p>Your harvest order has been saved and will appear in your order history.</p>
+          <button id="continue-shopping" class="place-order">Continue shopping</button>
+        </div>
+      </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="js/supabase-config.js"></script>
+    <script src="js/app.js?v=20261103-41"></script>
+  </body>
+</html>

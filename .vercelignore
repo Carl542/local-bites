@@ -1,0 +1,11 @@
+.env
+.env.*
+.git
+.vercel
+sql
+postman
+server
+assets/reference-screens
+API_GUIDE.md
+scripts
+*.log

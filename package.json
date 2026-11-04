@@ -1,32 +1,21 @@
 {
-  "name": "local-bites",
+  "name": "localbites",
+  "version": "1.0.0",
   "private": true,
-  "version": "0.0.0",
-  "type": "module",
+  "description": "LocalBites storefront and local Postman API",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc -b && vite build",
-    "lint": "oxlint",
-    "preview": "vite preview"
+    "start": "node --env-file-if-exists=.env server/server.js",
+    "api": "node --env-file-if-exists=.env server/server.js",
+    "check": "node --check js/page-entry.js && node --check js/app.js && node --check server/server.js && node scripts/check-pages.js",
+    "test:e2e": "playwright test",
+    "test:e2e:ui": "playwright test --ui",
+    "test:e2e:report": "playwright show-report"
   },
-  "dependencies": {
-    "canvas-confetti": "^1.9.4",
-    "lucide-react": "^1.45.0",
-    "react": "^19.2.8",
-    "react-dom": "^19.2.8"
+  "engines": {
+    "node": ">=20.12"
   },
   "devDependencies": {
-    "@tailwindcss/vite": "^4.3.3",
-    "@types/canvas-confetti": "^1.9.0",
-    "@types/node": "^24.13.3",
-    "@types/react": "^19.2.18",
-    "@types/react-dom": "^19.2.7",
-    "@vitejs/plugin-react": "^6.1.1",
-    "autoprefixer": "^10.6.0",
-    "oxlint": "^1.81.0",
-    "postcss": "^8.5.28",
-    "tailwindcss": "^4.3.3",
-    "typescript": "~6.0.2",
-    "vite": "^8.3.0"
+    "@playwright/test": "^1.64.1",
+    "@supabase/supabase-js": "^2.118.0"
   }
 }
