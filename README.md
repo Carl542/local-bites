@@ -69,3 +69,39 @@ shared dependencies.
 The HTML, CSS, JavaScript, partials, and assets can be deployed as a static project
 on Vercel. Configure the production domain under Supabase Authentication → URL
 Configuration. Never place a Supabase `service_role` key in frontend code.
+
+## Playwright browser tests
+
+The existing `npm.cmd run check` validates syntax and page wiring; the Postman
+collection covers API requests. Playwright adds automated browser coverage.
+
+```powershell
+npm.cmd ci
+npx.cmd playwright install chromium
+npm.cmd run test:e2e
+```
+
+Playwright starts its own static test server at http://127.0.0.1:4173. Live Server,
+API startup, Supabase credentials, and real accounts are not required.
+
+The suite runs on desktop Chromium and a mobile Chromium viewport. It checks
+portal loading, buyer/seller auth forms, password visibility, login validation,
+invalid credentials, signup confirmation, all protected entry routes and legacy
+redirects, and recovery from a failed shared-shell request. Browser JavaScript
+errors fail the test.
+
+The real Supabase SDK is served from the pinned npm dependency during tests.
+Remote HTTP responses are mocked and realtime WebSockets are closed. Tests do
+not write to production. These tests cover guest UI behavior; successful login,
+authenticated catalog/cart/checkout, seller management, and database policies
+still require additional integration scenarios against a dedicated test project.
+
+```powershell
+npm.cmd run test:e2e:ui       # Interactive runner
+npm.cmd run test:e2e:report   # Open the latest HTML results
+npm.cmd run test:e2e -- --project=chromium
+```
+
+Failure screenshots and traces are saved under `test-results/`; the HTML report
+is in `playwright-report/`. Both directories are ignored by Git.
+Configuration reference: https://playwright.dev/docs/test-webserver
